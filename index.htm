@@ -1,0 +1,47 @@
+<html>
+<head>
+<title></title>
+<style type="text/css">
+pre {
+	font-family: Consolas;
+	font-size: 9pt;
+}
+</style>
+<script type="text/javascript" src="js/commons-lang.js"></script>
+</head>
+
+<body>
+<pre>
+<script>
+	var arr = ["test@mail.com", " this is a test  ", "my@name@is@...", "onlyAlpha"];
+	// var arr = ["1234", "123R2", " 123 "];
+	var seperator = "@";
+	for (var i = 0; i < arr.length; i++) {
+		document.writeln("[" + arr[i] + "]");
+		// document.writeln("[SU.Before] " + StringUtils.substringBefore(arr[i], seperator));
+		// document.writeln("[SU.After ] " + StringUtils.substringAfter(arr[i], seperator));
+		// document.writeln("[SU.left  ] " + StringUtils.left(arr[i], 5));
+		// document.writeln("[SU.right ] " + StringUtils.right(arr[i], 5));
+		// document.writeln("[SU.mid   ] " + StringUtils.mid(arr[i], 5, 5));
+		// document.writeln("[SU.ltrim ] " + StringUtils.ltrim(arr[i]));
+		// document.writeln("[SU.rtrim ] " + StringUtils.rtrim(arr[i]));
+		// document.writeln("[SU.trim  ] " + StringUtils.trim(arr[i]));
+		// document.writeln("[SU.indexOf]" + StringUtils.indexOf(arr[i], "@"));
+		// document.writeln("[SU.indexOf]" + StringUtils.indexOf(arr[i], "@", 3));
+		// document.writeln("[SU.rightPad]" + StringUtils.rightPad(arr[i], 20, "*"));
+		// document.writeln("[SU.leftPad ]" + StringUtils.leftPad(arr[i], 20, "*"));
+		// document.writeln("[SU.center  ]" + StringUtils.center(arr[i], 20, "*"));
+		// document.writeln("[SU.countMatches]" + StringUtils.countMatches(arr[i], "@"));
+		// document.writeln("[SU.isAlpha]     " + StringUtils.isAlpha(arr[i]));
+		// document.writeln("[SU.isAlphaSpace]" + StringUtils.isAlphaSpace(arr[i]));
+		// document.writeln("[SU.isNumeric     ]" + StringUtils.isNumeric(arr[i]));
+		// document.writeln("[SU.isNumericSpace]" + StringUtils.isNumericSpace(arr[i]));
+		document.writeln("[SU.difference]" + StringUtils.difference(arr[i], " this is TEST"));
+		// document.writeln("[Before] " + arr[i].substringBefore(seperator));
+		// document.writeln("[After ] " + arr[i].substringAfter(seperator));
+		// document.writeln("[Last  ] " + arr[i].substringLast(seperator));
+	}
+</script>
+</pre>
+</body>
+</html>
